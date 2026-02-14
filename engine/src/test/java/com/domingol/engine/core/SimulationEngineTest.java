@@ -81,8 +81,8 @@ class SimulationEngineTest {
 
         // Then: At least some results should differ
         boolean foundDifferentScores = false;
-        int firstHomeScore = results.get(0).getHomeScore();
-        int firstAwayScore = results.get(0).getAwayScore();
+        int firstHomeScore = results.getFirst().getHomeScore();
+        int firstAwayScore = results.getFirst().getAwayScore();
 
         for (int i = 1; i < results.size(); i++) {
             if (results.get(i).getHomeScore() != firstHomeScore ||

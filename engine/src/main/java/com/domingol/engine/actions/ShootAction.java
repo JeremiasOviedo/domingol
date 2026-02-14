@@ -48,7 +48,7 @@ public class ShootAction implements Action {
         // double finalChance = baseChance * distanceMod * angleMod;
 
         // For now: 50% of base chance = goal chance
-        double goalChance = baseChance * 0.5;
+        double goalChance = baseChance * 0.03;
         double onTargetChance = baseChance * 0.8;
 
         boolean goal = rng.nextDouble() < goalChance;
